@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(version: 2021_04_17_170959) do
     t.float "price"
     t.float "average_vehicle_rating"
     t.integer "user_rating"
-    t.boolean "wishlist"
     t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -8,7 +8,6 @@ class CreateCars < ActiveRecord::Migration[6.1]
       t.float :price
       t.float :average_vehicle_rating
       t.integer :user_rating
-      t.boolean :wishlist
       t.string :image
 
       t.timestamps
