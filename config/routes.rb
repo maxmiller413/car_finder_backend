@@ -2,7 +2,11 @@ Rails.application.routes.draw do
 
   #users
   post "/login", to: "users#login" 
-  resources :users
+  post "/signup", to: "users#signup"
+  get "/me", to: "users#show"
+  get "/users", to: "users#index"
+  
+  #patch "/me", to: "users#update"
 
   #wishlists
   resources :wishlists
