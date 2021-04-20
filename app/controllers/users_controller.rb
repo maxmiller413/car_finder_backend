@@ -1,14 +1,11 @@
 class UsersController < ApplicationController
 
-    def index
-        @users = User.all
-        render json: @users
-    end 
+# POST /login
+  def login
 
-    def show
+    @user = User.first
+    render json: @user
 
-        @user = User.find(params[:id])
-        render json: @user
-    end 
-    
+  end
+
 end

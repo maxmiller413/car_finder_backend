@@ -10,9 +10,9 @@ Wishlist.destroy_all
 User.destroy_all
 Car.destroy_all
 
-karris = User.create(name: "karris", fav_brand: "porsche", fav_model: "911")
+karris = User.create(username: "karris", password: "123", fav_make: "porsche", fav_model: "911")
 
-max = User.create(name: "max", fav_brand: "audi", fav_model: "A7")
+max = User.create(username: "max", password: "123", fav_make: "audi", fav_model: "A7")
 
 car1 = Car.create(vehicle_type: "sedan", make: "audi", model: "A7", year: 2021, price: 55000, average_vehicle_rating: 4, user_rating: nil, image: "https://www.audiusa.com/content/dam/nemo/us/models/A7/A7-Sportback/header-transition/1920x1080_2020-Audi-A7-011_edit-min.jpg?output-format=webp&downsize=767px:*")
 
