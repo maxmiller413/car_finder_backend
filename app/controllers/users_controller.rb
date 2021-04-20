@@ -4,13 +4,21 @@ class UsersController < ApplicationController
 # POST /login
   def login
     #TODO : check the username and password
+    
+    # find the user based on their username
+    user = User.find_by(username: params[:username])
     # if they are who they say that are,
+    if user && user.authenticate(params[:password])
+      render json: user
+    else
+      render json: { errors: ["Invalid username or password"] }, status: :unauthorized
+    end
     # give them a token (wristband) and send the user and their token as the response
     # otherwise, send an error message
 
     #fake auth (stub)
-    user = User.first 
-    render json: user
+    # user = User.first 
+    
 
   end
 
