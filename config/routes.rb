@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   post "/signup", to: "users#signup"
   get "/me", to: "users#show"
   get "/users", to: "users#index"
+  get "/users/:id", to: "users#show"
   
   #patch "/me", to: "users#update"
 
