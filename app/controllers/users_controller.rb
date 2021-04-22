@@ -33,7 +33,7 @@ class UsersController < ApplicationController
       render json: user, status: :created
     else
       #error messages
-      render json: { errors: user.errors.full_messages }, status: :unprocessable_entity
+      render json: { errors: ["username or password incorrect"] }, status: :unprocessable_entity
     end 
   end 
 
@@ -46,6 +46,7 @@ class UsersController < ApplicationController
 
     #stub
     # @user = User.first
+    # byebug
     render json: @current_user
 
   end

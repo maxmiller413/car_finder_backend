@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   #users
   post "/login", to: "users#login" 
   post "/signup", to: "users#signup"
-  get "/me", to: "users#show"
+  get "/me/:id", to: "users#show"
   get "/users", to: "users#index"
   get "/users/:id", to: "users#show"
   

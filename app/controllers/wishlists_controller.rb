@@ -18,6 +18,7 @@ class WishlistsController < ApplicationController
     def update
         @wishlist = Wishlist.find_by(id: params[:id])
         @wishlist.update(name: params[:name])
+        
         render json: @wishlist
     end 
 
