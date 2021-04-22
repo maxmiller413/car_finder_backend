@@ -9,6 +9,17 @@ class WishlistsController < ApplicationController
         @wishlist = Wishlist.create(wishlist_params)
         render json: @wishlist
     end  
+
+    def show
+        @wishlist = Wishlist.find_by(id: params[:id])
+        render json: @wishlist
+    end 
+
+    def destroy
+        @wishlist = Wishlist.find_by(id: params[:id])
+        @wishlist.destroy()
+        
+    end
     
     private
 
