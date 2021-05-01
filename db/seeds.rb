@@ -34,7 +34,7 @@ car9 = Car.create(vehicle_type: "SUV", make: "Mercedes-Benz", model: "GLS", year
 
 car10 = Car.create(vehicle_type: "Convertible", make: "Mercedes-Benz", model: "SL Roadster", year: 2021, price: 292500, average_vehicle_rating: 3.2, user_rating: nil, image: "https://www.latestcarnews.net/wp-content/uploads/2021/01/Mercedes-SL-2021-2.jpg")
 
-car11 = Car.create(vehicle_type: "Sedan", make: "Porsche", model: "911", year: 2021, price: 99200, average_vehicle_rating: 4.5, user_rating: nil, image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/is8rDPGsGlcg/v1/-1x-1.jpg")
+car11 = Car.create(vehicle_type: "Coupe", make: "Porsche", model: "911", year: 2021, price: 99200, average_vehicle_rating: 4.5, user_rating: nil, image: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/is8rDPGsGlcg/v1/-1x-1.jpg")
 
 car12 = Car.create(vehicle_type: "Sedan", make: "Porsche", model: "718", year: 2021, price: 61250, average_vehicle_rating: 4.1, user_rating: nil, image: "https://www.motortrend.com/uploads/sites/5/2020/12/2021-Porsche-718-Cayman-GT4-yellow-13.jpg")
 
@@ -53,6 +53,29 @@ car18 = Car.create(vehicle_type: "SUV", make: "BMW", model: "X2", year: 2021, pr
 car19 = Car.create(vehicle_type: "Sedan", make: "BMW", model: "8 series", year: 2021, price: 85000, average_vehicle_rating: 4.3, user_rating: nil, image: "https://cdn.carbuzz.com/gallery-images/2021-bmw-8-series-gran-coupe-carbuzz-598628.jpg")
 
 car20 = Car.create(vehicle_type: "Sedan", make: "BMW", model: "7 series", year: 2021, price: 86800, average_vehicle_rating: 4.2, user_rating: nil, image: "https://cdn.carbuzz.com/gallery-images/840x560/584000/100/584119.jpg")
+
+car21 = Car.create(vehicle_type: "Sedan", make: "Infiniti", model: "Q50", year: 2021, price: 47800, average_vehicle_rating: 4.3, user_rating: nil, image: "https://media.ed.edmunds-media.com/infiniti/q50/2021/oem/2021_infiniti_q50_sedan_red-sport-400_fq_oem_1_815.jpg")
+
+car22 = Car.create(vehicle_type: "SUV", make: "Infiniti", model: "QX50", year: 2021, price: 56800, average_vehicle_rating: 4.2, user_rating: nil, image: "https://www.infinitiofmelbourne.com/static/dealer-14056/Staff/21INFINITI-QX50-ExteriorBusyCityStreet-21x9.jpg")
+
+car23 = Car.create(vehicle_type: "Coupe", make: "Infiniti", model: "Q60", year: 2020, price: 49800, average_vehicle_rating: 4.1, user_rating: nil, image: "https://i.pinimg.com/originals/af/c6/64/afc664156cb8af8912403074256df797.jpg")
+
+car24 = Car.create(vehicle_type: "Sedan", make: "Volvo", model: "Q60", year: 2021, price: 86800, average_vehicle_rating: 4.2, user_rating: nil, image: "https://cdn.carbuzz.com/gallery-images/840x560/584000/100/584119.jpg")
+
+car25 = Car.create(vehicle_type: "SUV", make: "Volvo", model: "XC90 T8", year: 2020, price: 54800, average_vehicle_rating: 4.4, user_rating: nil, image: "https://blog.consumerguide.com/wp-content/uploads/sites/2/2020/04/Screen-Shot-2020-04-10-at-11.47.13-AM.png")
+
+car26 = Car.create(vehicle_type: "SUV", make: "Bentley", model: "Bentayga", year: 2021, price: 160000, average_vehicle_rating: 4.2, user_rating: nil, image: "https://www.motorcarsofjackson.com/imagetag/332/2/f/Used-2021-Bentley-Bentayga-V8-FIRST-EDITION-Jackson-MS.jpg")
+
+car27 = Car.create(vehicle_type: "Coupe", make: "Bentley", model: "Continental GT", year: 2019, price: 202800, average_vehicle_rating: 4.2, user_rating: nil, image: "https://car-images.bauersecure.com/pagefiles/86578/contigt_convertible_100.jpg")
+
+car28 = Car.create(vehicle_type: "Sedan", make: "Bentley", model: "Mulsanne", year: 2020, price: 310800, average_vehicle_rating: 4.5, user_rating: nil, image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mulsanne-extended-wheelbase-rose-gold-over-magnetic-04-jpg-1578934767.jpg?crop=0.710xw:0.534xh;0.181xw,0.406xh&resize=1200:*")
+
+car29 = Car.create(vehicle_type: "SUV", make: "BMW", model: "x6", year: 2020, price: 65800, average_vehicle_rating: 4.2, user_rating: nil, image: "https://media.ed.edmunds-media.com/bmw/x6-m/2020/oem/2020_bmw_x6-m_4dr-suv_competition_fq_oem_3_1600.jpg")
+
+car30 = Car.create(vehicle_type: "SUV", make: "Mercedes-Benz", model: "GLE Coupe", year: 2021, price: 71800, average_vehicle_rating: 4.2, user_rating: nil, image: "https://cdn.carbuzz.com/gallery-images/2021-mercedes-amg-gle-63-coupe-carbuzz-679976.jpg")
+
+car31 = Car.create(vehicle_type: "SUV", make: "Jaguar", model: "F Pace", year: 2021, price: 49800, average_vehicle_rating: 4.4, user_rating: nil, image: "https://static.toiimg.com/thumb/msid-79529747,width-1070,height-580,imgsize-1410698,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg")
+
 
 wishlist1 = Wishlist.create(name: "Luxury", user: karris, car: car1)
 wishlist2 = Wishlist.create(name: "Luxury", user: max, car: car3)
